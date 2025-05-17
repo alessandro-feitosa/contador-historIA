@@ -1,4 +1,5 @@
-# 📖 Sistema de Criação de Histórias Interativo 📖</center>
+# 📖 Sistema de Criação de Histórias Interativo 📖
+
 
 ## Descrição
 
@@ -6,6 +7,7 @@ Este sistema interativo permite que crianças e adultos colaborem na criação d
 A plataforma utiliza reconhecimento de voz e inteligência artificial para transformar ideias faladas ou escritas em narrativas ricas e criativas. 
 Os usuários podem iterar em suas histórias, adicionando detalhes e expandindo a trama em várias etapas. 
 Ao final do processo, as histórias podem ser salvas em formato PDF ou como arquivos de áudio.
+
 
 ## Funcionalidades
 
@@ -16,6 +18,54 @@ Ao final do processo, as histórias podem ser salvas em formato PDF ou como arqu
 + Revisão e Edição: A história gerada pode ser revisada e editada no formato de texto ✍️.
 + Saída em Múltiplos Formatos: As histórias finalizadas podem ser geradas em formato PDF 📄 para leitura ou como arquivos de áudio 🎧 para ouvir.
 + Download de Arquivos: Os usuários podem baixar os arquivos PDF e de áudio gerados para seus dispositivos 📥.
+
+
+## ⚙️ Instalação
+Para instalar e executar o sistema, siga estas etapas:
+### 1 - Clone o repositório:
+  + Abra um terminal ou prompt de comando.
+  + Navegue até o diretório onde você deseja salvar o projeto.
+  + Clone o repositório do projeto usando o comando:
+```
+git clone <URL_DO_REPOSITÓRIO>
+```
+### 2 - Crie um ambiente virtual (recomendado):
+  + Navegue até o diretório do projeto:
+```
+cd nome-do-repositorio
+```
+  + Crie um ambiente virtual:
+```
+python -m venv venv
+```
+  + Ative o ambiente virtual:
+```
+Linux/macOS: source venv/bin/activate
+Windows:     venv\Scripts\activate
+```
+### 3 - Instale as dependências:
+  + Com o ambiente virtual ativado, instale as dependências do projeto usando o pip:
+```
+pip install -r requirements.txt
+```
+### 4 - Configure a chave da API do Google:
+  + Você precisa obter uma chave de API do Google para usar o modelo Gemini. Siga as instruções na documentação do Google Cloud para obter sua chave de API.
+  + Crie um arquivo chamado config.py na raiz do projeto.
+  + Adicione a seguinte linha ao arquivo config.py, substituindo <SUA_CHAVE_API> pela sua chave de API real:
+```
+GOOGLE_API_KEY = "<SUA_CHAVE_API>"
+```
+### 5 - Execute o sistema:
+  + No terminal, com o ambiente virtual ativado, execute o script principal:
+```
+python main.py
+```
+### 6 - Acesse a interface no navegador:
+  + O Gradio irá iniciar o sistema e exibir uma mensagem no terminal com o endereço para acessar a interface. Geralmente, será algo como:
+```
+Acesse a URL: http://127.0.0.1:7860
+```
+
 
 ## Como Usar o Sistema
 
